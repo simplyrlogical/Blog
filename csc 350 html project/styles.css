@@ -1,0 +1,351 @@
+
+/* Index CSS */ 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.backgroundimg {
+  position: relative;
+  height: 100vh; 
+  width: 100vw;  
+  overflow: hidden; 
+}
+.backgroundimg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  z-index: -1;
+}
+#sidebar {
+    background-color: #ffffff;
+    width: 300px;
+    text-align: center;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 1px 1px 3px #dcdcdc;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+aside {
+    display: block;
+    unicode-bidi: isolate;
+}
+#side-icon {
+    background: linear-gradient(to bottom right, #ffc7c7, #fbdad6);
+    border-radius: 50%;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 1.25em;
+    margin-top: 20px
+}
+#sidebar .icon {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  background-color: #efeffb;
+}
+.icon {
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: #efeffb;
+}
+#description{
+  font-family: "The Girl Next Door", cursive;
+  font-style: bold;
+  font-weight: 600;
+  font-size: 14px;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.nav-links {
+  margin-top: 2.25em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+#navLinks {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.nav-links li {
+  list-style-type: none;
+  margin: 10px 0;
+  display: block;
+}
+a:link, a:visited{
+  background-color: #f5f5f5;
+  color: #766e6e;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  width: 240px; 
+}
+a:hover, a:active{
+  background-color: rgb(243, 219, 236);
+}
+.iicon {
+  width: 26px; 
+  height: 26px;
+  margin-left: 10px;
+  border-radius: 50%; 
+  background-color: transparent; 
+  transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.iicon:hover {
+  transform: scale(1.1); 
+  filter: brightness(1.2);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(229, 213, 233);
+}
+article:first-of-type{
+  margin-top: 0;
+}
+h1{
+  margin-top: -10px;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+}
+#container {
+  position: relative;
+  margin: 50px auto 50px 300px;
+  width: calc(99vw - 300px);
+}
+article {
+  background-color: white;
+  width: calc(540px + 100px);
+  position: relative;
+  margin: 100px auto;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 3px #dcdcdc, -1px 1px 3px #dcdcdc;
+  padding: 50px;
+}
+#header-img {
+  width: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+}
+img {
+  margin: 0px;
+  display: block;
+  height: auto;
+}
+.icon-gradient {
+  background: linear-gradient(to bottom right, #ffc7c7, #fbdad6);
+  border-radius: 50%;
+  padding: 3px;
+  display: inline-block;
+}
+#extra-header .icon {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3px;
+  width: 3.25em;
+  height: 3.25em;
+}
+#caption{
+font-family: "ABeeZee", sans-serif;
+font-weight: 600;
+font-size: 14px;
+text-align: center;
+}
+.facts{
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* My University CSS */ 
+
+.uniheader {
+  text-align: center;
+  background-color: #f7f0f8;
+  padding: 30px;
+  border-radius: 15px; 
+  margin: 50px auto 50px 300px; 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-left: 300px; 
+}
+.uniheader h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #c71585;
+}
+.uniheader p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #444;
+  margin-top: 15px;
+}
+
+table {
+  margin: 50px auto 50px 300px;
+  width: 60%; 
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table, th, td {
+  border: 3px solid black;
+}
+
+th, td {
+  padding: 5px;
+  font-size: 1.0em;
+}
+#class-schedule h1{
+  margin-top: 10px;
+  margin-left: 20%;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* MORE ABOUT ME CSS */
+
+.gallery-section {
+  padding: 40px;
+  background-color: #f9f4fb;
+  text-align: center;
+  margin: 50px auto; 
+  max-width: 1000px; 
+}
+
+.gallery-section h2 {
+  font-family: 'The Girl Next Door', cursive;
+  color: #444;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 20px; 
+  justify-items: center; 
+  padding: 0 15px;
+}
+
+.gallery-item {
+  width: 200px; 
+  height: 300px; 
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+#my-photos .gallery-item img {
+  border: 5px solid #7e8df8;
+  filter: grayscale(30%);
+}
+
+#favorite-artists .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the images cover the container without stretching */
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border: 5px solid #f5a623;
+  filter: grayscale(50%);
+}
+
+#favorite-artists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+
+}
+
+#favorite-artists .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Same grid layout as My Gallery */
+  gap: 20px; /* Space between items */
+  justify-items: center; /* Center the images inside the grid */
+  max-width: 1000px; /* Adjust this based on your page width */
+  width: 100%;
+  margin: auto;
+
+}
+
+#favorite-artists .gallery-item {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#favorite-artists .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the box */
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+
