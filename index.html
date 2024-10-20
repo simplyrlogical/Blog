@@ -72,7 +72,6 @@
       <li> Oxtail</li>
       <li> Rice and Peas </li>
       <li> Corned Beef</li>
-      <li> Fried Chicken</li>
       <li> BBQ Ribs</li>
       <li> Lamb Chops</li>
     </ol>
@@ -81,17 +80,31 @@
 </section>
 </main>
 
-<!--Java Script Mini Game-->
-<script>
-  function cherryb(){
-    const creat = document.createElement('div');
-    creat.classList.add('cherryb');
-    creat.innerHTML = `🌸`;
-    container.
-    console.log(creat);
+<!-- Guess The Button Game-->
+<div id="game-container">
+  <h1>Guess the Number Game</h1>
+  <p>I'm thinking of a number between 1 and 100.</p>
+  <input type="number" id="guess" placeholder="Enter your guess" min="1" max="100">
+  <button onclick="checkGuess()">Guess</button>
+  <p id="message"></p>
+</div>
 
+<script>
+  const secretNumber = Math.floor(Math.random() * 100) + 1;
+  let attempts = 0;
+
+  function checkGuess() {
+      const guess = Number(document.getElementById("guess").value);
+      attempts++;
+
+      if (guess === secretNumber) {
+          document.getElementById("message").textContent = `Congratulations! You guessed it in ${attempts} attempts.`;
+      } else if (guess < secretNumber) {
+          document.getElementById("message").textContent = "Too low! Try again.";
+      } else {
+          document.getElementById("message").textContent = "Too high! Try again.";
+      }
   }
-  cherryb();
 </script>
 
 
@@ -100,3 +113,8 @@
 
 </body>
 </html>
+
+          
+
+
+
