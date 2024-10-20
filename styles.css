@@ -291,7 +291,7 @@ th, td {
 #favorite-artists .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the images cover the container without stretching */
+  object-fit: cover; 
   border-radius: 10px;
   transition: opacity 0.3s ease;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -310,10 +310,10 @@ th, td {
 
 #favorite-artists .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Same grid layout as My Gallery */
-  gap: 20px; /* Space between items */
-  justify-items: center; /* Center the images inside the grid */
-  max-width: 1000px; /* Adjust this based on your page width */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 20px; 
+  justify-items: center;
+  max-width: 1000px; 
   width: 100%;
   margin: auto;
 
@@ -331,7 +331,7 @@ th, td {
 #favorite-artists .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the image covers the box */
+  object-fit: cover; 
   border-radius: 10px;
 }
 
@@ -347,5 +347,43 @@ th, td {
     grid-template-columns: 1fr;
   }
 }
+
+/* INDEX Javasciprt CSS */
+main {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  margin-left: 20%;
+
+}
+#game-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #45a049;
+}
+#message {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
 
 
