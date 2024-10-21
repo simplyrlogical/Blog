@@ -360,7 +360,10 @@ main {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: inline-block;
+  display: block; /* Ensures it's a block-level element */
+  margin: 0 auto; /* Centers the container horizontally */
+  text-align: center; /* Centers any inline content inside the container */
+  width: 100%;
 }
 input {
   padding: 10px;
